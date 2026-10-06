@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Volumes/SSD 1TB/Software Engineer School/FSDI 114/114 Challenge/venv/bin/python3.14" "$0" "$@"
+' '''
+import sys
+from nbformat.sign import TrustNotebookApp
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(TrustNotebookApp.launch_instance())
